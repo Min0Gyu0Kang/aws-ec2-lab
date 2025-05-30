@@ -1,0 +1,58 @@
+추천 환경
+프론트: Flutter
+Framework: NextJS(Vercel)
+백엔드: Golang
+
+가트너(주) 트렌드
+2021: 결합식 혁신
+2022: 클라우드 플랫폼
+2023: 공업용 클라우드
+2024: 작년과동일
+2025: AI 클라우드
+SaaS -> AI 
+
+4차 산업 목표
+AR/VR: 산업 제품/사물 -> Middleware(Cloud Computing) sensing, 분석, 판단, 자동제, 알림 조치 -> 사용자
+Bigdata: Variety, Volume(big and abundant), Velocity(Stream data), Value(worth)
+analyze 애널리틱스 -> AI 인사이트 -> decision 엔지니어, 영업, 마케터, 투자자,...
+
+클라우드 컴퓨팅
+하는 이유: 회사들이 자체 시스템 만들어서 유지 보수하기 힘들기에
+형태: 서비스, 인터넷, 주문 
+IT/App on-demand service with tier subscription
+기술들: 관리, 기반, 보안, 상호연동 Iaas PaaS SaaS
+과거: on-premise 클라이언트가 직접 깔기 
+클라우드 IaaS: 가상화 이후 계층은 인터넷이 알아서 (Infrastructure)
+PaaS: 런타임부터 인터넷이 알아서 (앱, 데이터만 필요) <- 개발자 실무용 방식 (Platform)
+SaaS: 인터넷이 전부 깔아줌 ex: Google (Software)
+Customization higher cost, slower time to value-> Standardization lower cost, faster time to value
+
+분류: Public(AWS, Azure, Google), Private, Hybrid
+단점: 클라우드에 문제 생기면, 모든 사용자에게 문제
+클라우드랑 서버 비교: 대부분 나은데, 로드 밸런스가 비쌈, 후불임
+클라우드 업계: Process Innovation -> "끊임없이 개발하지 않으면 도태된다"
+
+가상화 기초: VM으로 다수의 가상 컴퓨터로 단일 하드웨어 작업을 분할
+1세대: 완전 가상화 : OS Hardware 여러 VM -> 엄청나게 느림 (OS와 연동된 그 모든 것)
+2세대: 일부 가상화 : Hardware Hypervisor OS 여러 VM -> 속도가 향상되었지만 여전히 에뮬레이터 필요하면 느림
+3세대: HVM : Hardware OS 여러 VM -> 하드웨어 직접 가상화, 게스트 OS가 직접 하드웨어와 통신, near bare-metal speed ex: AMI
+AWS Cloud - VPC - EC2_VM
+Virtual Box 네트워크 추천: Adaptive Bridge (호스트다 연관된 모든 게스트 IP에 접근 가능); 포트 포워딩보다 낫다!
+
+AWS Region과 가용영역 (AZ와 Data Center)
+
+IAM User 계정 권한
+-AWS API 호출 가능
+Access key, Secret Access key
+물론 관리는 root user로!
+MFA를 하면 google otp로 매번 인증 (털리는 것보단 나으니까)
+실습:
+1. Google 비즈니스 계정을 만들 필요 있음 (워크스페이스 있으면 그것도 괜찮지만)
+2. AWS 계정 만들기
+3. 루트 유저 로그인
+
+EC2 구성
+-EBS
+-AMI
+-Security Group
+가격: spot-instance < reserved instance < on-demand < dedicated host

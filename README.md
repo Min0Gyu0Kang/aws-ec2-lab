@@ -1,1 +1,1 @@
-# -Min0Gyu0Kang-aws-ec2-nodejs-server-deployment-demo-
+# based on https://github.com/Younghae/skku_back and https://github.com/Younghae/skku_front
