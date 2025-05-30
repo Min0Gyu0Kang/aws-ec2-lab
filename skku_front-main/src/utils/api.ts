@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:4000/api/todos';
+const API_URL = 'http://34.227.151.62:4000/api/todos';
 
 export const getTodos = async () => (await fetch(API_URL)).json();
 export const addTodo = async (content: string) => {
